@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#aac9ff"/>
+      <stop offset="100%" stop-color="#2f7eff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- Simple geometric accents -->
+  <circle cx="200" cy="200" r="300" fill="#2f7eff" opacity="0.06"/>
+  <circle cx="1700" cy="800" r="400" fill="#aac9ff" opacity="0.05"/>
+
+  <!-- Text -->
+  <text x="960" y="500" font-family="'Segoe UI', 'Helvetica', sans-serif" font-size="84" font-weight="bold" text-anchor="middle" fill="url(#txt)">s14pup64</text>
+  <text x="960" y="580" font-family="'Segoe UI', 'Helvetica', sans-serif" font-size="24" fill="#8899bb" text-anchor="middle">built with woof-CE</text>
+  <text x="960" y="620" font-family="'Segoe UI', 'Helvetica', sans-serif" font-size="14" fill="#445577" text-anchor="middle">Slackware 14 · Puppy Linux</text>
+</svg>
