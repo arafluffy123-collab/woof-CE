@@ -1,0 +1,41 @@
+name: Build s14pup64 ISO
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git wget xorriso squashfs-tools
+
+      - name: Clone woof-CE
+        run: |
+          git clone https://github.com/puppylinux-woof-CE/woof-CE.git /tmp/woof-CE
+          cp -r ${{ github.workspace }}/s14pup64 /tmp/woof-CE/woof-distro/
+
+      - name: Run merge2out
+        run: |
+          cd /tmp/woof-CE
+          ./merge2out s14pup64
+
+      - name: Build the ISO
+        run: |
+          cd /tmp/woof-CE
+          ./build.sh s14pup64
+
+      - name: Upload ISO as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: s14pup64-iso
+          path: /tmp/woof-CE/*.iso
