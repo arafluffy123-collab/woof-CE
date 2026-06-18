@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<JWM>
+    <!-- Desktop Settings -->
+    <Deskwidth>4</Deskwidth>
+    <DesktopLayout/>
+    <Background type="image">/usr/share/backgrounds/default.jpg</Background>
+
+    <!-- Window Styling -->
+    <WindowStyle>
+        <Title>#1f3a6b</Title>
+        <Active>#2c6ef0</Active>
+        <Font>DejaVu Sans-12</Font>
+    </WindowStyle>
+
+    <!-- Taskbar -->
+    <Tray x="0" y="-1" height="32" autohide="false">
+        <TrayButton icon="menu24.png">root:3</TrayButton>
+        <TaskList maxwidth="256" spacing="4"/>
+        <Dock/>
+        <Clock format="%H:%M">Tray</Clock>
+    </Tray>
+
+    <!-- Main Menu -->
+    <RootMenu label="Menu" height="24">
+        <Program label="Terminal" icon="terminal.png">urxvt</Program>
+        <Program label="File Manager" icon="folder.png">rox</Program>
+        <Program label="Web Browser" icon="browser.png">palemoon</Program>
+        <Separator/>
+        <Program label="Geany" icon="geany.png">geany</Program>
+        <Program label="MPV" icon="media.png">mpv</Program>
+        <Separator/>
+        <Program label="Logout" icon="exit.png">wmexit</Program>
+    </RootMenu>
+
+    <!-- Keybindings -->
+    <Key mask="4" key="r">exec: urxvt</Key>
+    <Key mask="4" key="m">root:3</Key>
+    <Key mask="4" key="f">exec: palemoon</Key>
+</JWM>
