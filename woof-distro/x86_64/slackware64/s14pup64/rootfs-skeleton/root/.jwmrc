@@ -3,7 +3,7 @@
     <!-- Desktop Settings -->
     <Deskwidth>4</Deskwidth>
     <DesktopLayout/>
-    <Background type="image">/usr/share/backgrounds/default.jpg</Background>
+    <Background type="image">/usr/share/backgrounds/wallpaper.svg</Background>
 
     <!-- Window Styling -->
     <WindowStyle>
