@@ -1,4 +1,5 @@
 #!/bin/sh
 # Custom startup commands
 echo "Welcome to s14pup64!" > /root/welcome.txt
+setvol 80
 chmod +x /etc/rc.d/rc.local
