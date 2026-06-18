@@ -1,3 +1,5 @@
-# /etc/profile — system‑wide settings
-alias ls='ls --color=auto'
+# /etc/profile
 export EDITOR=geany
+export BROWSER=palemoon
+alias ll='ls -la'
+alias g='geany'
