@@ -1,0 +1,12 @@
+# Core packages (minimal for Slackware 14)
+bash
+busybox
+coreutils
+e2fsprogs
+jwm
+rox-filer
+xorg-server
+# Additional apps
+palemoon
+geany
+mpv
